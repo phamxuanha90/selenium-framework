@@ -24,7 +24,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 logging:
-  file: logs/patest.log
+  file: logs/automation.log
   level:
     root: WARN
     vn.kms.ktaf: DEBUG

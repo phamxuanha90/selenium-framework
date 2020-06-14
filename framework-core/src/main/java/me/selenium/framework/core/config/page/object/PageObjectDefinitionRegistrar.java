@@ -1,7 +1,8 @@
-package me.selenium.framework.core.config;
+package me.selenium.framework.core.config.page.object;
 
 import me.selenium.framework.core.annotation.EnablePageObjects;
 import me.selenium.framework.core.annotation.PageObject;
+import me.selenium.framework.core.config.webdriver.WebDriverScope;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider;

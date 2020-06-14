@@ -1,4 +1,4 @@
-package me.selenium.framework.core.config;
+package me.selenium.framework.core.config.webdriver;
 
 import org.springframework.test.context.TestContext;
 import org.springframework.test.context.support.AbstractTestExecutionListener;

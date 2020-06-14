@@ -1,0 +1,7 @@
+/.idea/
+/framework-core/target/
+/framework-core/framework-core.iml
+/selenium-framework.iml
+/framework-test/drivers/
+/framework-test/logs/
+/framework-test/target/

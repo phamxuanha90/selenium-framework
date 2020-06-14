@@ -1,4 +1,4 @@
-package me.selenium.framework.core.config;
+package me.selenium.framework.core.config.webdriver;
 
 import me.selenium.framework.core.helper.AutomationTestException;
 import org.openqa.selenium.Dimension;
@@ -62,14 +62,14 @@ public class WebDriverFactory {
             case "CHROME":
                 return new ChromeDriver();
             case "EDGE":
-                return new EdgeDriver(capabilities);
+                return new EdgeDriver();
             case "SAFARI":
-                return new SafariDriver(capabilities);
+                return new SafariDriver();
             case "IE":
-                return new InternetExplorerDriver(capabilities);
+                return new InternetExplorerDriver();
             case "FIREFOX":
             default:
-                return new FirefoxDriver(capabilities);
+                return new FirefoxDriver();
         }
     }
 

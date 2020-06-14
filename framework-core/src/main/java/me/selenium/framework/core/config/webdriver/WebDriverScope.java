@@ -1,4 +1,4 @@
-package me.selenium.framework.core.config;
+package me.selenium.framework.core.config.webdriver;
 
 
 import org.openqa.selenium.WebDriver;
@@ -9,11 +9,10 @@ import org.springframework.context.ConfigurableApplicationContext;
 
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.Map;
 
 public class WebDriverScope implements Scope {
     public static final String NAME = "WEB_DRIVER";
-    private final Map<String, Object> instances = new HashMap();
+    private final HashMap<String, Object> instances = new HashMap();
 
     @Override
     public Object get(String name, ObjectFactory<?> objectFactory) {
@@ -51,6 +50,7 @@ public class WebDriverScope implements Scope {
         return null;
     }
 
+    // TODO: refactor code for the reset instance which using in @WebDriverTestExecutionListener
     public boolean reset() {
         boolean reset = false;
         synchronized (instances) {

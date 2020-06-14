@@ -1,4 +1,4 @@
-package me.selenium.framework.core.config;
+package me.selenium.framework.core.config.page.object;
 
 import me.selenium.framework.core.annotation.ComponentObject;
 import me.selenium.framework.core.annotation.PageObject;

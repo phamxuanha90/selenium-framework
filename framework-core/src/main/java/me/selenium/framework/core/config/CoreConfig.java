@@ -1,5 +1,9 @@
 package me.selenium.framework.core.config;
 
+import me.selenium.framework.core.config.page.object.PageObjectPostProcessor;
+import me.selenium.framework.core.config.webdriver.WebDriverFactory;
+import me.selenium.framework.core.config.webdriver.WebDriverScope;
+import me.selenium.framework.core.config.webdriver.WebDriverSettings;
 import org.openqa.selenium.WebDriver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.CustomScopeConfigurer;

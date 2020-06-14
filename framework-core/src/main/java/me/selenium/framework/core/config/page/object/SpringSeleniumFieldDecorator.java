@@ -1,4 +1,4 @@
-package me.selenium.framework.core.config;
+package me.selenium.framework.core.config.page.object;
 
 import me.selenium.framework.core.BaseComponent;
 import me.selenium.framework.core.annotation.ComponentObject;
@@ -21,7 +21,7 @@ public class SpringSeleniumFieldDecorator extends DefaultFieldDecorator {
 
     @Override
     public Object decorate(ClassLoader loader, Field field) {
-        Class fieldType = field.getType();
+        Class<?> fieldType = field.getType();
         if (fieldType.isAnnotationPresent(ComponentObject.class)) {
             AutowireCapableBeanFactory beanFactory = appContext.getAutowireCapableBeanFactory();
             Object componentObject = beanFactory.createBean(fieldType);
