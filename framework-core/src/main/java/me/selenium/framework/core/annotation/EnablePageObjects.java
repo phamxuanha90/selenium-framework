@@ -1,7 +1,7 @@
 package me.selenium.framework.core.annotation;
 
 import me.selenium.framework.core.config.CoreConfig;
-import me.selenium.framework.core.config.PageObjectDefinitionRegistrar;
+import me.selenium.framework.core.config.page.object.PageObjectDefinitionRegistrar;
 import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.ElementType;

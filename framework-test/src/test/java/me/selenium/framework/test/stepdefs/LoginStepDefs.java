@@ -14,6 +14,6 @@ public class LoginStepDefs extends BaseStepDefs {
 
     @Then("^I should see the link \"([^\"]*)\"$")
     public void iShouldSeeTheLink(String arg0) throws AutomationTestException {
-        Asserts.assertEquals(loginPage.getGmailLinkText(),"Google Gmail", "Verify Gmail link exists");
+        Asserts.assertEquals(loginPage.getGmailLinkText(),"Gmail", "Verify Gmail link exists");
     }
 }
